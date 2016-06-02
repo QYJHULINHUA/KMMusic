@@ -9,19 +9,18 @@
 #import <Foundation/Foundation.h>
 #import "AFNetworking.h"
 
+#define BaseUrl @"http://tingapi.ting.baidu.com/v1/restserver/ting?from=webapp_music"
 
 @interface KMMNetCallBack : NSObject
 
 
+//>! 网络成功
+typedef void(^onSuccess)(NSNumber *successCode,id responseSuccess);
 
-@property (strong) void (^onPreExecute)();
+//>! 网络失败
+typedef void(^onFailure)(NSNumber *failureCode,NSString *errorMsg);
 
-@property (strong) void (^onSuccess)(long status, NSString* responseString);
-
-@property (strong) void (^onError)(long status, NSString* responseString);
-
-@property (strong) void (^onComplete)();
-
++ (AFHTTPSessionManager*)getHttpManager;
 
 
 @end

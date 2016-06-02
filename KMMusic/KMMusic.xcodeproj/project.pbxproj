@@ -31,6 +31,8 @@
 		99B96DD41CFFD8420035EC65 /* UIWebView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 99B96DCB1CFFD8420035EC65 /* UIWebView+AFNetworking.m */; };
 		99B96DD91CFFD9680035EC65 /* KMMNetCallBack.m in Sources */ = {isa = PBXBuildFile; fileRef = 99B96DD81CFFD9680035EC65 /* KMMNetCallBack.m */; };
 		99BC2D691CFFE8B200803974 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 99BC2D681CFFE8B200803974 /* Assets.xcassets */; };
+		99BC2D6D1CFFFB1500803974 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 99BC2D6C1CFFFB1500803974 /* SWRevealViewController.m */; };
+		99BC2D701D00159F00803974 /* KMMNetCallBack+GetList.m in Sources */ = {isa = PBXBuildFile; fileRef = 99BC2D6F1D00159F00803974 /* KMMNetCallBack+GetList.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -102,6 +104,10 @@
 		99B96DD71CFFD9680035EC65 /* KMMNetCallBack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KMMNetCallBack.h; sourceTree = "<group>"; };
 		99B96DD81CFFD9680035EC65 /* KMMNetCallBack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KMMNetCallBack.m; sourceTree = "<group>"; };
 		99BC2D681CFFE8B200803974 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		99BC2D6B1CFFFB1500803974 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
+		99BC2D6C1CFFFB1500803974 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
+		99BC2D6E1D00159F00803974 /* KMMNetCallBack+GetList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "KMMNetCallBack+GetList.h"; sourceTree = "<group>"; };
+		99BC2D6F1D00159F00803974 /* KMMNetCallBack+GetList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "KMMNetCallBack+GetList.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -196,6 +202,7 @@
 		99B96D9D1CFFCEA60035EC65 /* Library */ = {
 			isa = PBXGroup;
 			children = (
+				99BC2D6A1CFFFB1500803974 /* SWRevealViewController */,
 				99B96DA21CFFD8180035EC65 /* AFNetWorking */,
 			);
 			path = Library;
@@ -262,8 +269,19 @@
 			children = (
 				99B96DD71CFFD9680035EC65 /* KMMNetCallBack.h */,
 				99B96DD81CFFD9680035EC65 /* KMMNetCallBack.m */,
+				99BC2D6E1D00159F00803974 /* KMMNetCallBack+GetList.h */,
+				99BC2D6F1D00159F00803974 /* KMMNetCallBack+GetList.m */,
 			);
 			path = Net;
+			sourceTree = "<group>";
+		};
+		99BC2D6A1CFFFB1500803974 /* SWRevealViewController */ = {
+			isa = PBXGroup;
+			children = (
+				99BC2D6B1CFFFB1500803974 /* SWRevealViewController.h */,
+				99BC2D6C1CFFFB1500803974 /* SWRevealViewController.m */,
+			);
+			path = SWRevealViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -400,9 +418,11 @@
 				99B96DB61CFFD82F0035EC65 /* AFURLSessionManager.m in Sources */,
 				99B96DD41CFFD8420035EC65 /* UIWebView+AFNetworking.m in Sources */,
 				99B96DD11CFFD8420035EC65 /* UIImageView+AFNetworking.m in Sources */,
+				99BC2D701D00159F00803974 /* KMMNetCallBack+GetList.m in Sources */,
 				99B96D721CFFCB040035EC65 /* KMMusicViewController.m in Sources */,
 				99B96DD01CFFD8420035EC65 /* UIButton+AFNetworking.m in Sources */,
 				99B96D6F1CFFCB040035EC65 /* AppDelegate.m in Sources */,
+				99BC2D6D1CFFFB1500803974 /* SWRevealViewController.m in Sources */,
 				99B96DB21CFFD82F0035EC65 /* AFNetworkReachabilityManager.m in Sources */,
 				99B96DD31CFFD8420035EC65 /* UIRefreshControl+AFNetworking.m in Sources */,
 				99B96D6C1CFFCB040035EC65 /* main.m in Sources */,

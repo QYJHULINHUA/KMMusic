@@ -10,4 +10,9 @@
 
 @implementation KMMNetCallBack
 
++ (AFHTTPSessionManager*)getHttpManager
+{
+    return [AFHTTPSessionManager manager];
+}
+
 @end
