@@ -33,6 +33,9 @@
 		99BC2D691CFFE8B200803974 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 99BC2D681CFFE8B200803974 /* Assets.xcassets */; };
 		99BC2D6D1CFFFB1500803974 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 99BC2D6C1CFFFB1500803974 /* SWRevealViewController.m */; };
 		99BC2D701D00159F00803974 /* KMMNetCallBack+GetList.m in Sources */ = {isa = PBXBuildFile; fileRef = 99BC2D6F1D00159F00803974 /* KMMNetCallBack+GetList.m */; };
+		99E59A011D0037280088DEC7 /* KMMTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 99E599FA1D0037280088DEC7 /* KMMTabBarViewController.m */; };
+		99E59A061D003A2A0088DEC7 /* KMM_FViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 99E59A041D003A2A0088DEC7 /* KMM_FViewController.m */; };
+		99E59A071D003A2A0088DEC7 /* KMM_FViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 99E59A051D003A2A0088DEC7 /* KMM_FViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -108,6 +111,11 @@
 		99BC2D6C1CFFFB1500803974 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
 		99BC2D6E1D00159F00803974 /* KMMNetCallBack+GetList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "KMMNetCallBack+GetList.h"; sourceTree = "<group>"; };
 		99BC2D6F1D00159F00803974 /* KMMNetCallBack+GetList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "KMMNetCallBack+GetList.m"; sourceTree = "<group>"; };
+		99E599F91D0037280088DEC7 /* KMMTabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KMMTabBarViewController.h; sourceTree = "<group>"; };
+		99E599FA1D0037280088DEC7 /* KMMTabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KMMTabBarViewController.m; sourceTree = "<group>"; };
+		99E59A031D003A2A0088DEC7 /* KMM_FViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KMM_FViewController.h; sourceTree = "<group>"; };
+		99E59A041D003A2A0088DEC7 /* KMM_FViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KMM_FViewController.m; sourceTree = "<group>"; };
+		99E59A051D003A2A0088DEC7 /* KMM_FViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KMM_FViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,6 +146,7 @@
 		99B96D5E1CFFCB040035EC65 = {
 			isa = PBXGroup;
 			children = (
+				99E599F01D0037280088DEC7 /* KMM_VC */,
 				99B96DD61CFFD9090035EC65 /* Net */,
 				99B96D9D1CFFCEA60035EC65 /* Library */,
 				99B96D691CFFCB040035EC65 /* KMMusic */,
@@ -284,6 +293,18 @@
 			path = SWRevealViewController;
 			sourceTree = "<group>";
 		};
+		99E599F01D0037280088DEC7 /* KMM_VC */ = {
+			isa = PBXGroup;
+			children = (
+				99E599F91D0037280088DEC7 /* KMMTabBarViewController.h */,
+				99E599FA1D0037280088DEC7 /* KMMTabBarViewController.m */,
+				99E59A031D003A2A0088DEC7 /* KMM_FViewController.h */,
+				99E59A041D003A2A0088DEC7 /* KMM_FViewController.m */,
+				99E59A051D003A2A0088DEC7 /* KMM_FViewController.xib */,
+			);
+			path = KMM_VC;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -388,6 +409,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				99B96D7A1CFFCB050035EC65 /* LaunchScreen.storyboard in Resources */,
+				99E59A071D003A2A0088DEC7 /* KMM_FViewController.xib in Resources */,
 				99BC2D691CFFE8B200803974 /* Assets.xcassets in Resources */,
 				99B96D751CFFCB050035EC65 /* Main.storyboard in Resources */,
 			);
@@ -423,8 +445,10 @@
 				99B96DD01CFFD8420035EC65 /* UIButton+AFNetworking.m in Sources */,
 				99B96D6F1CFFCB040035EC65 /* AppDelegate.m in Sources */,
 				99BC2D6D1CFFFB1500803974 /* SWRevealViewController.m in Sources */,
+				99E59A011D0037280088DEC7 /* KMMTabBarViewController.m in Sources */,
 				99B96DB21CFFD82F0035EC65 /* AFNetworkReachabilityManager.m in Sources */,
 				99B96DD31CFFD8420035EC65 /* UIRefreshControl+AFNetworking.m in Sources */,
+				99E59A061D003A2A0088DEC7 /* KMM_FViewController.m in Sources */,
 				99B96D6C1CFFCB040035EC65 /* main.m in Sources */,
 				99B96DCC1CFFD8420035EC65 /* AFAutoPurgingImageCache.m in Sources */,
 				99B96DB31CFFD82F0035EC65 /* AFSecurityPolicy.m in Sources */,
