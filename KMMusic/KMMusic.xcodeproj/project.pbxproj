@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		99003F421D2A075B00E675CE /* KMM_LViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 99003F401D2A075B00E675CE /* KMM_LViewController.m */; };
+		99003F431D2A075B00E675CE /* KMM_LViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 99003F411D2A075B00E675CE /* KMM_LViewController.xib */; };
+		99003F491D2A550400E675CE /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99003F481D2A550400E675CE /* AVFoundation.framework */; };
+		99003F4E1D2A57FE00E675CE /* AVKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99003F4D1D2A57FE00E675CE /* AVKit.framework */; };
+		99003F521D2A582800E675CE /* KMM_PlayerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 99003F501D2A582800E675CE /* KMM_PlayerVC.m */; };
 		99B96D6C1CFFCB040035EC65 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 99B96D6B1CFFCB040035EC65 /* main.m */; };
 		99B96D6F1CFFCB040035EC65 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 99B96D6E1CFFCB040035EC65 /* AppDelegate.m */; };
 		99B96D721CFFCB040035EC65 /* KMMusicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 99B96D711CFFCB040035EC65 /* KMMusicViewController.m */; };
@@ -36,6 +41,7 @@
 		99E59A011D0037280088DEC7 /* KMMTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 99E599FA1D0037280088DEC7 /* KMMTabBarViewController.m */; };
 		99E59A061D003A2A0088DEC7 /* KMM_FViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 99E59A041D003A2A0088DEC7 /* KMM_FViewController.m */; };
 		99E59A071D003A2A0088DEC7 /* KMM_FViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 99E59A051D003A2A0088DEC7 /* KMM_FViewController.xib */; };
+		99E59A0D1D0119CB0088DEC7 /* KMM_MViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 99E59A0C1D0119CB0088DEC7 /* KMM_MViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +62,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		99003F3F1D2A075B00E675CE /* KMM_LViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KMM_LViewController.h; sourceTree = "<group>"; };
+		99003F401D2A075B00E675CE /* KMM_LViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KMM_LViewController.m; sourceTree = "<group>"; };
+		99003F411D2A075B00E675CE /* KMM_LViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KMM_LViewController.xib; sourceTree = "<group>"; };
+		99003F481D2A550400E675CE /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		99003F4D1D2A57FE00E675CE /* AVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVKit.framework; path = System/Library/Frameworks/AVKit.framework; sourceTree = SDKROOT; };
+		99003F4F1D2A582800E675CE /* KMM_PlayerVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KMM_PlayerVC.h; sourceTree = "<group>"; };
+		99003F501D2A582800E675CE /* KMM_PlayerVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KMM_PlayerVC.m; sourceTree = "<group>"; };
 		99B96D671CFFCB040035EC65 /* KMMusic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KMMusic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		99B96D6B1CFFCB040035EC65 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		99B96D6D1CFFCB040035EC65 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -116,6 +129,8 @@
 		99E59A031D003A2A0088DEC7 /* KMM_FViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KMM_FViewController.h; sourceTree = "<group>"; };
 		99E59A041D003A2A0088DEC7 /* KMM_FViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KMM_FViewController.m; sourceTree = "<group>"; };
 		99E59A051D003A2A0088DEC7 /* KMM_FViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KMM_FViewController.xib; sourceTree = "<group>"; };
+		99E59A0B1D0119CB0088DEC7 /* KMM_MViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KMM_MViewController.h; sourceTree = "<group>"; };
+		99E59A0C1D0119CB0088DEC7 /* KMM_MViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KMM_MViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +138,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				99003F4E1D2A57FE00E675CE /* AVKit.framework in Frameworks */,
+				99003F491D2A550400E675CE /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -143,9 +160,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		99003F441D2A547F00E675CE /* AVPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				99003F4F1D2A582800E675CE /* KMM_PlayerVC.h */,
+				99003F501D2A582800E675CE /* KMM_PlayerVC.m */,
+			);
+			path = AVPlayer;
+			sourceTree = "<group>";
+		};
 		99B96D5E1CFFCB040035EC65 = {
 			isa = PBXGroup;
 			children = (
+				99003F4D1D2A57FE00E675CE /* AVKit.framework */,
+				99003F481D2A550400E675CE /* AVFoundation.framework */,
 				99E599F01D0037280088DEC7 /* KMM_VC */,
 				99B96DD61CFFD9090035EC65 /* Net */,
 				99B96D9D1CFFCEA60035EC65 /* Library */,
@@ -296,11 +324,17 @@
 		99E599F01D0037280088DEC7 /* KMM_VC */ = {
 			isa = PBXGroup;
 			children = (
+				99003F441D2A547F00E675CE /* AVPlayer */,
 				99E599F91D0037280088DEC7 /* KMMTabBarViewController.h */,
 				99E599FA1D0037280088DEC7 /* KMMTabBarViewController.m */,
 				99E59A031D003A2A0088DEC7 /* KMM_FViewController.h */,
 				99E59A041D003A2A0088DEC7 /* KMM_FViewController.m */,
 				99E59A051D003A2A0088DEC7 /* KMM_FViewController.xib */,
+				99003F3F1D2A075B00E675CE /* KMM_LViewController.h */,
+				99003F401D2A075B00E675CE /* KMM_LViewController.m */,
+				99003F411D2A075B00E675CE /* KMM_LViewController.xib */,
+				99E59A0B1D0119CB0088DEC7 /* KMM_MViewController.h */,
+				99E59A0C1D0119CB0088DEC7 /* KMM_MViewController.m */,
 			);
 			path = KMM_VC;
 			sourceTree = "<group>";
@@ -372,6 +406,7 @@
 				TargetAttributes = {
 					99B96D661CFFCB040035EC65 = {
 						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = 2AHKDU2ECU;
 					};
 					99B96D7F1CFFCB050035EC65 = {
 						CreatedOnToolsVersion = 7.3;
@@ -409,6 +444,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				99B96D7A1CFFCB050035EC65 /* LaunchScreen.storyboard in Resources */,
+				99003F431D2A075B00E675CE /* KMM_LViewController.xib in Resources */,
 				99E59A071D003A2A0088DEC7 /* KMM_FViewController.xib in Resources */,
 				99BC2D691CFFE8B200803974 /* Assets.xcassets in Resources */,
 				99B96D751CFFCB050035EC65 /* Main.storyboard in Resources */,
@@ -450,8 +486,10 @@
 				99B96DD31CFFD8420035EC65 /* UIRefreshControl+AFNetworking.m in Sources */,
 				99E59A061D003A2A0088DEC7 /* KMM_FViewController.m in Sources */,
 				99B96D6C1CFFCB040035EC65 /* main.m in Sources */,
+				99003F421D2A075B00E675CE /* KMM_LViewController.m in Sources */,
 				99B96DCC1CFFD8420035EC65 /* AFAutoPurgingImageCache.m in Sources */,
 				99B96DB31CFFD82F0035EC65 /* AFSecurityPolicy.m in Sources */,
+				99E59A0D1D0119CB0088DEC7 /* KMM_MViewController.m in Sources */,
 				99B96DD91CFFD9680035EC65 /* KMMNetCallBack.m in Sources */,
 				99B96DB41CFFD82F0035EC65 /* AFURLRequestSerialization.m in Sources */,
 				99B96DCE1CFFD8420035EC65 /* AFNetworkActivityIndicatorManager.m in Sources */,
@@ -459,6 +497,7 @@
 				99B96DB11CFFD82F0035EC65 /* AFHTTPSessionManager.m in Sources */,
 				99B96DCD1CFFD8420035EC65 /* AFImageDownloader.m in Sources */,
 				99B96DCF1CFFD8420035EC65 /* UIActivityIndicatorView+AFNetworking.m in Sources */,
+				99003F521D2A582800E675CE /* KMM_PlayerVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -599,6 +638,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = KMMusic/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -612,6 +652,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = KMMusic/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

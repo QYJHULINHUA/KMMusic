@@ -19,9 +19,14 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     
-    KMMTabBarViewController *tb = [[KMMTabBarViewController alloc] init];
-    self.window.rootViewController = tb;
+    
+    UINavigationController *nav = [[UINavigationController alloc] init];
+    self.window.rootViewController = nav;
     [self.window makeKeyAndVisible];
+    KMMTabBarViewController *tb = [[KMMTabBarViewController alloc] init];
+    [nav pushViewController:tb animated:YES];
+    tb.title = @"在线音乐";
+    
     return YES;
 }
 

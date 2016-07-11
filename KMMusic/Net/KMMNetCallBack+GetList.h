@@ -30,6 +30,6 @@ typedef enum : NSUInteger {
 
 + (void)getMusicRecommandSongID:(NSInteger)songID Success:(onSuccess)success failure:(onFailure)failure;
 
-
++ (void)getMusicRecommendSuccess:(onSuccess)success failure:(onFailure)failure;
 
 @end

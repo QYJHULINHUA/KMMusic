@@ -17,12 +17,38 @@
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="blackimage" translatesAutoresizingMaskIntoConstraints="NO" id="GGx-mb-uQS">
                     <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                 </imageView>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HjL-fq-bb6">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="60"/>
+                    <color key="backgroundColor" red="0.60516036179999999" green="0.63193873359999997" blue="0.77228104440000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="Kui-l6-F8K"/>
+                    </constraints>
+                </scrollView>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="h3I-5U-Ybe">
+                    <rect key="frame" x="0.0" y="60" width="600" height="120"/>
+                    <color key="backgroundColor" red="0.35346422700000002" green="0.91825143909999996" blue="0.34870990950000003" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="120" id="GHh-Mc-VaC"/>
+                    </constraints>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="xQD-IW-R8c">
+                        <size key="itemSize" width="50" height="50"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
                 <constraint firstItem="GGx-mb-uQS" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="56f-Hg-upQ"/>
+                <constraint firstAttribute="trailing" secondItem="HjL-fq-bb6" secondAttribute="trailing" id="9Ha-mG-D6c"/>
+                <constraint firstItem="HjL-fq-bb6" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Aks-9J-ko2"/>
                 <constraint firstAttribute="trailing" secondItem="GGx-mb-uQS" secondAttribute="trailing" id="BfF-B2-cmi"/>
+                <constraint firstItem="h3I-5U-Ybe" firstAttribute="top" secondItem="HjL-fq-bb6" secondAttribute="bottom" id="EZe-zo-9r3"/>
                 <constraint firstAttribute="bottom" secondItem="GGx-mb-uQS" secondAttribute="bottom" id="WTP-HZ-I5e"/>
+                <constraint firstItem="h3I-5U-Ybe" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="e0r-kJ-Ed6"/>
+                <constraint firstItem="HjL-fq-bb6" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="pPH-en-s7I"/>
+                <constraint firstAttribute="trailing" secondItem="h3I-5U-Ybe" secondAttribute="trailing" id="rrd-4s-8nq"/>
                 <constraint firstItem="GGx-mb-uQS" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="tig-jM-6bg"/>
             </constraints>
         </view>

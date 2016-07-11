@@ -7,6 +7,7 @@
 //
 
 #import "KMM_FViewController.h"
+#import "KMMNetCallBack+GetList.h"
 
 @interface KMM_FViewController ()
 
@@ -17,6 +18,25 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    
+    UIBarButtonItem *rightBtn = [[UIBarButtonItem alloc]
+                                 initWithImage:[UIImage imageNamed:@"serchBtn"]
+                                 style:UIBarButtonItemStylePlain
+                                 target:self
+                                 action:@selector(backView)];
+    self.navigationItem.rightBarButtonItem = rightBtn;
+    
+}
+
+- (void)backView
+{
+    [KMMNetCallBack getMusicRecommendSuccess:^(NSNumber *successCode, id responseSuccess) {
+        
+        NSLog(@"asd");
+        
+    } failure:^(NSNumber *failureCode, NSString *errorMsg) {
+        NSLog(@"asd");
+    }];
 }
 
 - (void)didReceiveMemoryWarning {

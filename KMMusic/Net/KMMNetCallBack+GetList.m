@@ -45,6 +45,26 @@
     
 }
 
++ (void)getMusicRecommendSuccess:(onSuccess)success failure:(onFailure)failure
+{
+    AFHTTPSessionManager *manager = [KMMNetCallBack getHttpManager];
+    
+    UInt64 recordTime = [[NSDate date] timeIntervalSince1970]*1000;
+    
+    NSDictionary *paran = @{@"method":@"baidu.ting.adv.showlist",@"_":@(recordTime)};
+    [manager GET:BaseUrl parameters:paran progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+        if (success) {
+            success ([NSNumber numberWithInt:1],responseObject);
+        }
+        
+    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+        if (success) {
+            success ([NSNumber numberWithInteger:error.code],error.localizedFailureReason);
+        }
+    }];
+    
+}
+
 
 
 @end

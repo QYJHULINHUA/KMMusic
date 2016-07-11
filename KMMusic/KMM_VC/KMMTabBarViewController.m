@@ -8,6 +8,8 @@
 
 #import "KMMTabBarViewController.h"
 #import "KMM_FViewController.h"
+#import "KMM_LViewController.h"
+#import "KMM_MViewController.h"
 
 
 @interface KMMTabBarViewController ()<UITabBarControllerDelegate>
@@ -24,17 +26,25 @@
     c1.tabBarItem.image = [UIImage imageNamed:@"netmusci"];
     c1.tabBarItem.title = @"在线音乐";
     
-    KMM_FViewController *c2 = [[KMM_FViewController alloc] init];
+    KMM_LViewController *c2 = [[KMM_LViewController alloc] init];
     c2.tabBarItem.image = [UIImage imageNamed:@"locationMusic"];
     c2.tabBarItem.title = @"本地音乐";
     
-    KMM_FViewController *c3 = [[KMM_FViewController alloc] init];
+    KMM_MViewController *c3 = [[KMM_MViewController alloc] init];
     c3.tabBarItem.image = [UIImage imageNamed:@"myset"];
     c3.tabBarItem.title = @"我的";
     
     NSArray *VC_arr = @[c1,c2,c3];
     self.viewControllers = VC_arr;
     self.tabBar.barTintColor = [UIColor whiteColor];
+    self.delegate = self;
+}
+
+- (void)tabBarController:(UITabBarController *)tabBarController didSelectViewController:(UIViewController *)viewController
+{
+    self.title = viewController.tabBarItem.title;
+    
+    
 }
 
 
